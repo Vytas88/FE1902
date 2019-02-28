@@ -1,0 +1,43 @@
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    .nav-bar{
+        height: $nav-height;
+        background: $default-bg;
+        position: relative;
+        &--left{
+            float: left;
+            width: $nav-left-width;
+            text-align: center;
+        }
+        &--right{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            // width: $nav-right-width;
+
+        }
+        &__lists{
+            list-style: none;
+            line-height: $nav-height;
+            &--left{
+
+            }
+            &--right{
+                display: flex;
+                flex-flow: wrap;
+
+            }
+            &__link{
+                padding: 30px;
+
+            }
+        }
+    }
+}
