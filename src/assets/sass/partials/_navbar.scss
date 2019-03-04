@@ -35,8 +35,11 @@
 
             }
             &__link{
-                padding: 30px;
-
+                padding: 0 30px;
+                svg{
+                  width: 20px;
+                  fill: white;
+                }
             }
         }
     }

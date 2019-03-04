@@ -48,7 +48,10 @@ module.exports = function(grunt) {
       cwd: 'web/assets/vendor/material-design-icons',
       src: [
           '../../../../web/assets/images/ic_menu_24px.svg',
-          '../../../../web/assets/images/ic_menu_24px.svg',
+          '../../../../web/assets/images/ic_menu2_24px.svg',
+          '../../../../web/assets/images/ic_menu3_24px.svg',
+          '../../../../web/assets/images/ic_menu4_24px.svg',
+          '../../../../web/assets/images/ic_menu5_24px.svg',
       ],
       dest: 'src/sprites',
       options: {
