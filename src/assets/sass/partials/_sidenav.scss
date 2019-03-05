@@ -27,6 +27,11 @@
     &:after{
       @include arrow();
     }
+    &.active{
+      a{
+        color: red;
+      }
+    }
   }
 &__title{
   padding: 12px 20px;
