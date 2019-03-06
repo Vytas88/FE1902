@@ -7,11 +7,27 @@
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   border-radius: 3px;
-  width: 100%;
-  margin: 0 15px;
+  margin-bottom: 15px;
   background: #fff;
   padding: 15px;
+}
+.boxes__title {
+  text-align: left;
+}
+.boxes--right {
   text-align: right;
+}
+.boxes__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  -o-object: cover;
+}
+.boxes--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .v-align {
@@ -9678,6 +9694,9 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 50%;
   border: 4px solid gray;
 }
+.circle--border {
+  border: 5px solid gray;
+}
 .circle--success {
   background: rgba(102, 187, 106, 0.75);
   border-color: rgba(102, 187, 106, 0.35);
@@ -9695,6 +9714,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: rgba(156, 39, 176, 0.75);
 }
 .circle .svg-icon {
+  fill: white;
   width: 32px;
   height: 32px;
   position: absolute;
@@ -9774,6 +9794,9 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-align: center;
   -ms-flexbox-align: center;
   align-items: center;
+}
+.side-menu__lists__list a svg {
+  fill: #000;
 }
 .side-menu__lists__list:after {
   content: '';

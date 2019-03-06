@@ -3,7 +3,7 @@
   width: 24px;
 }
 
-@mixin arrow($color: #000) {
+@mixin arrow($color: #000, $rotate: -45deg) {
   content: '';
   position: absolute;
   right: 20px;
