@@ -1,6 +1,9 @@
 .section-container {
-  margin-top: $nav-height + 20;
-  margin-left: $nav-left-width + 15;
+  margin-top: $nav-height;
+  margin-left: $nav-left-width;
+  &--closed{
+    margin-left: 80px;
+  }
 }
 
 .boxes {
@@ -10,6 +13,9 @@
   margin-bottom: 15px;
   background: #fff;
   padding: 15px;
+  .circle{
+    @include circle();
+  }
   &__title {
     text-align: left;
   }
@@ -27,5 +33,27 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  &__user-info{
+    margin-left: 20px;
+    p{
+      &:first-of-type{
+        color: blue;
+      }
+    }
+  }
+}
+.user-role {
+  &--user{
+    color: $color-user;
+    font-weight: 600;
+  }
+  &--admin{
+    color: $color-admin;
+    font-weight: 600;
+  }
+  &--master{
+    color: $color-master;
+    font-weight: 600;
   }
 }

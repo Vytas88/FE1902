@@ -4,87 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="assets/css/app.css">
+           {{#is default.lang 'lt'}}
+            <link rel="stylesheet" href="../assets/css/app.css">
+        {{else}}
+            <link rel="stylesheet" href="assets/css/app.css">
+        {{/is}}
   </head>
   <body>
     {{>navbar}}
 
     {{>sidenav}}
-    <div class="section-container">
-      {{body}}
+    <div  id="section-container" class="section-container">
+      {{>title}}
+      {{>body}}
     </div>
     {{#is basename 'index'}}
    {{>footer}}
    {{/is}}
     <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
-    <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
 
-       <script type="text/javascript">
-       var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-       // The type of chart we want to create
-       type: 'line',
 
-       // The data for our dataset
-       data: {
-           labels: ["January", "February", "March", "April", "May", "June", "July"],
-           datasets: [{
-               label: "My First dataset",
-               backgroundColor: 'rgb(255, 99, 132)',
-               borderColor: 'rgb(255, 99, 132)',
-               data: [0, 10, 5, 2, 20, 30, 45],
-           }]
-       },
-
-       // Configuration options go here
-       options: {}
-    });
-       </script>
-
-       <script type="text/javascript">
-       var ctx = document.getElementById('myChart2').getContext('2d');
-    var chart = new Chart(ctx, {
-       // The type of chart we want to create
-       type: 'doughnut',
-
-       // The data for our dataset
-       data: {
-           labels: [        'Red',
-        'Yellow',
-        'Blue'],
-           datasets: [{
-               label: "My First dataset",
-               backgroundColor: 'rgb(255, 99, 132)',
-               borderColor: 'rgb(255, 99, 132)',
-               data: [10, 20, 30],
-           }]
-       },
-
-       // Configuration options go here
-       options: {}
-    });
-       </script>
-
-       <script type="text/javascript">
-       var ctx = document.getElementById('myChart3').getContext('2d');
-    var chart = new Chart(ctx, {
-       // The type of chart we want to create
-       type: 'pie',
-
-       // The data for our dataset
-       data: {
-           labels: ["January", "February", "March", "April", "May", "June", "July"],
-           datasets: [{
-               label: "My First dataset",
-               backgroundColor: 'rgb(255, 99, 132)',
-               borderColor: 'rgb(255, 99, 132)',
-               data: [0, 10, 5, 2, 20, 30, 45],
-           }]
-       },
-
-       // Configuration options go here
-       options: {}
-    });
-       </script>
-  </body>
+    {{#is default.lang 'lt'}}
+       <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+     {{else}}
+       <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+     {{/is}}
+     <script type="text/javascript" src="assets/js/chart.js"></script>
+     <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+       <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="assets/js/app.js"></script>
+     </body>
 </html>

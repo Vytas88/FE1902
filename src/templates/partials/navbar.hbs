@@ -20,7 +20,7 @@
     <nav class="nav-bar nav-bar--right">
         <ul class="nav-bar__lists nav-bar__lists--left">
             <li class="nav-bar__lists__link">
-              <a href="#">
+              <a href="#" id="burger">
                 <svg class="svg-icon">
            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
                 </svg>
@@ -29,25 +29,51 @@
         </ul>
         <ul class="nav-bar__lists nav-bar__lists--right">
           <li class="nav-bar__lists__link">
-            <a href="#">
+            <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <svg class="svg-icon">
          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu2"></use>
               </svg>
             </a>
+              <div class="dropdown-menu" aria-labelledby="activities">
+                <a class="dropdown-menu__item" href="#">
+                  <div class="circle">
+                    <svg class="svg-icon">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu2" style="fill: black"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown-menu__item__title">
+                    <h5>Robert</h5>
+                    <p>1 min</p>
+                  </div>
+                </a>
+                <a class="dropdown-menu__item" href="#">Another action</a>
+                <a class="dropdown-menu__item" href="#">Something else here</a>
+              </div>
+
           </li>
             <li class="nav-bar__lists__link">
-              <a href="#">
+              <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <svg class="svg-icon">
            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu3"></use>
                 </svg>
               </a>
+                <div class="dropdown-menu" aria-labelledby="profile">
+                  <a class="dropdown-menu__item" href="#">Profile1</a>
+                  <a class="dropdown-menu__item" href="#">Profile2</a>
+                  <a class="dropdown-menu__item" href="#">Profile3</a>
+                </div>
             </li>
               <li class="nav-bar__lists__link">
-                <a href="#">
+                <a href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <svg class="svg-icon">
              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu4"></use>
                   </svg>
                 </a>
+                  <div class="dropdown-menu" aria-labelledby="notification">
+                    <a class="dropdown-menu__item" href="#">Notification1</a>
+                    <a class="dropdown-menu__item" href="#">Notification1</a>
+                    <a class="dropdown-menu__item" href="#">Notification1</a>
+                  </div>
               </li>
         </ul>
     </nav>

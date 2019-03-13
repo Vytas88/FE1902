@@ -41,6 +41,29 @@
                   fill: white;
                 }
             }
+            .dropdown-menu{
+              &__item{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                padding: 10px 20px;
+                .circle{
+                  @include circle($width: 40px, $height: 40px);
+                }
+                align-items: center;
+                &__title{
+                  margin-left: 10px;
+                  h5{
+                    color: $text-color;
+                  }
+                  p{
+                    line-height: 1;
+                    color: $mid-gray;
+                  }
+
+                }
+              }
+            }
         }
     }
 }
