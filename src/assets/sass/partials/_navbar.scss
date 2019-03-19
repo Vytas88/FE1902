@@ -66,4 +66,23 @@
             }
         }
     }
+    .navbar__user__image{
+      width: 30px;
+      height: 30px;
+    }
+}
+.sidenav-closed{ //uzdedam ant body klase su Javascriptu
+  .topbar{
+    .nav-bar{
+      &--left{
+        width: $sidenav-closed-width;
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+  .section-container{
+    margin-left: $sidenav-closed-width + 15;
+  }
 }

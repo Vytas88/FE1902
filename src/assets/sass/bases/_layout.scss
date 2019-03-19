@@ -5,7 +5,17 @@
     margin-left: 80px;
   }
 }
-
+.section-title{
+  &__nav{
+    a{
+      &:first-of-type{
+        &:after{
+          content: '/'
+        }
+      }
+    }
+  }
+}
 .boxes {
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;

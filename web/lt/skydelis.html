@@ -7,7 +7,7 @@
             <link rel="stylesheet" href="../assets/css/app.css">
   </head>
   <body>
-    <!-- <nav class="nav nav--dark"> //=nav bendras stilius, nav dark tiktai sau nes kazka
+    <!-- <nav class="nav nav--dark"> //=nav bendras stilius, nav dark tiktai sau
       <ul class="nav__lists">
         <li><a class="nav__lists__link" href="#"></a></li>
       </ul>
@@ -23,7 +23,15 @@
     <div class="topbar">
         <nav class="nav-bar nav-bar--left">
             <ul class="nav-bar__lists">
-                <li><a class="nav-bar__lists__link" href="#">ADMIN</a></li>
+                <li>
+                  <a class="nav-bar__lists__link" href="#">
+                    <svg class="svg-icon">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
+                    </svg>
+                    <span>TITLE</span>
+                  </a>
+                </li>
+    
             </ul>
         </nav>
         <nav class="nav-bar nav-bar--right">
@@ -84,6 +92,55 @@
                         <a class="dropdown-menu__item" href="#">Notification1</a>
                       </div>
                   </li>
+                  <li class="nav-bar__lists__link">
+                    <a href="#" role="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="boxes__image navbar__user__image" src="assets\images\user1.jpg" alt="">
+                    </a>
+                      <div class="dropdown-menu" aria-labelledby="notification">
+                        <h6>Welcome ! John</h6>
+                        <a class="dropdown-menu__item" href="#">
+                                <div class="circle">
+                                     <svg class="svg-icon">
+                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#profileSvg" style="fill: #3C5A99"></use>
+                                     </svg>
+                                </div>
+                                <div class="dropdown-menu__item__title">
+                                     <h6>Profile</h6>
+                                </div>
+                        </a>
+                        <a class="dropdown-menu__item" href="#">
+                                <div class="circle">
+                                     <svg class="svg-icon">
+                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#profileSvg" style="fill: #3C5A99"></use>
+                                     </svg>
+                                </div>
+                                <div class="dropdown-menu__item__title">
+                                     <h6>Settings</h6>
+                                </div>
+                        </a>
+                        <a class="dropdown-menu__item" href="#">
+                                <div class="circle">
+                                     <svg class="svg-icon">
+                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#profileSvg" style="fill: #3C5A99"></use>
+                                     </svg>
+                                </div>
+                                <div class="dropdown-menu__item__title">
+                                     <h6>Lock Screen</h6>
+                                </div>
+                        </a>
+                        <a class="dropdown-menu__item" href="#">
+                                <div class="circle">
+                                     <svg class="svg-icon">
+                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#profileSvg" style="fill: #3C5A99"></use>
+                                     </svg>
+                                </div>
+                                <div class="dropdown-menu__item__title">
+                                     <h6>Logout</h6>
+                                </div>
+                        </a>
+                      </div>
+    
+                  </li>
             </ul>
         </nav>
     </div>
@@ -120,7 +177,35 @@
     </ul>
     </div>
     <div  id="section-container" class="section-container">
-      Welcome
+      <div id="notification_tabs" class="notification_tabs">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+        </li>
+      
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
+      </div>
+      <div class="section-title">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              Welcome !
+            </div>
+            <div class="col-sm-6 section-title__nav text-right">
+              <span><a href="/dashboard.html">title</a></span>
+              <a href="" id="basename"></a>
+            </div>
+          </div>
+        </div>
+      </div>
       
 <div class="container-fluid">
   <div class="row">
