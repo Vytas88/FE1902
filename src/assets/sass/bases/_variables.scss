@@ -1,14 +1,19 @@
 $default-bg: blue;
+$default-btn: #ff8000;
+$transition: 0.3s;
+
 $nav-height: 80px;
 $sidenav-closed-width: 70px;
 $nav-left-width: 250px;
 $nav-right-width: 1100px;
 $box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) ;
 $border-radius: 3px;
+$input-height: 56px;
 $bg-color: #ebebeb;
 $text-color: #343c49;
 $light-gray: #f5f5f5;
 $mid-gray: #80898e;
+$border: 1px solid $mid-gray;
 $color-success: rgba(102, 187, 106, 0.75);
 $color-success-al: rgba(102, 187, 106, 0.35);
 $color-primary: rgba(102, 150, 106, 0.75);

@@ -10,7 +10,7 @@
             <link rel="stylesheet" href="assets/css/app.css">
         {{/is}}
   </head>
-  <body>
+  <body {{#is bg-color 'true'}}class="bg-color"{{/is}}>
     {{>navbar}}
 
     {{>sidenav}}

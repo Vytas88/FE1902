@@ -1,0 +1,25 @@
+@mixin default-button($height: 50px, $background: $default-btn){  //skliaustuose apsibudinam kad galetume pakeisti greitai viska
+  width: auto;
+  display: block;
+  line-height: $height;
+  height: $height;
+  background: $background;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  transition: $transition;
+  text-decoration: none;
+  text-align: center;
+  &:hover{
+    filter: brightness(85%);
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.button{
+  @include default-button();
+  &--full--width{
+    width: 100%;
+  }
+}

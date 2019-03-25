@@ -9724,6 +9724,16 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 600;
 }
 
+.perfect-center {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  background: #fff;
+}
+
 .v-align {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9755,6 +9765,51 @@ p {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
+}
+
+.button {
+  width: auto;
+  display: block;
+  line-height: 50px;
+  height: 50px;
+  background: #ff8000;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+  filter: brightness(85%);
+}
+.button:focus {
+  outline: none;
+}
+.button--full--width {
+  width: 100%;
+}
+
+.checkbox input {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  height: 14px;
+  cursor: pointer;
+  width: 14px;
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+}
+.checkbox input:before {
+  border-width: 2px solid red;
+  border-radius: 2px;
+  content: "";
+  height: 14px;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
 }
 
 .topbar {
@@ -9925,4 +9980,85 @@ h1, h2, h3, h4, h5 {
   height: 100%;
   position: absolute;
   z-index: 999;
+}
+
+.login {
+  background: white;
+}
+.login__title {
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.login__title img {
+  max-width: 100%;
+  display: block;
+  height: 40px;
+}
+.login__form__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+.login__form__item input:not([type=checkbox]) {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #80898e;
+  border-radius: 3px;
+  background: #fff;
+  color: #80898e;
+  padding-left: 18px;
+}
+.login__form__item input:not([type=checkbox]):focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 0 1px blue;
+}
+.login__form__item input:not([type=checkbox]):valid ~ label {
+  top: -7px;
+  font-size: 12px;
+  padding: 0 6px;
+}
+.login__form__item input:not([type=checkbox]):focus ~ label {
+  top: -7px;
+  font-size: 12px;
+  padding: 0 6px;
+}
+.login__form__item .label-inside {
+  position: absolute;
+  background: #fff;
+  font-size: 12px;
+  color: #80898e;
+  top: 18px;
+  left: 18px;
+  line-height: 24px;
+  margin: 0;
+  transition: .2s ease all;
+  pointer-events: none;
+}
+.login__form__item button {
+  width: 100%;
+}
+.login__form__item--checkbox {
+  display: flex;
+  margin-top: 20px;
+}
+.login__form__item__button {
+  width: auto;
+  display: block;
+  line-height: 50px;
+  height: 50px;
+  background: #ff8000;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+.login__form__item__button:hover {
+  filter: brightness(85%);
+}
+.login__form__item__button:focus {
+  outline: none;
 }

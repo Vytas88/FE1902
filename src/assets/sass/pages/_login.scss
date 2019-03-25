@@ -1,0 +1,33 @@
+.login{
+  background: white;
+  &__title{
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    img{
+      max-width: 100%;
+      display: block;
+      height: 40px;
+    }
+
+  }
+  &__form{
+    &__item{
+      position: relative;
+      margin-bottom: 20px;
+      @include default-input();
+      button{
+        width: 100%;
+      }
+      &--checkbox{
+        display: flex;
+        margin-top: 20px;
+      }
+      &__button{
+        @include default-button();
+      }
+      }
+
+  }
+}
