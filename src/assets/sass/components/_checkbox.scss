@@ -1,29 +1,132 @@
+// .checkbox{
+//   input{
+//     appearance:none; //nuima defaultini appearanca
+//     background: transparent;
+//     border: 0;
+//     height: 14px;
+//     cursor: pointer;
+//     width: 14px;
+//     margin-right: 10px;
+//     position: relative;
+//     top: 0;
+//     &:before{ //apearancas funkcionuos sitam before, inputas pries paspaudima
+//       border-width: 2px solid red;
+//       border-radius: 2px;
+//       content: ""; //kad kas nors butu rodoma, reikia nauudot su before
+//       height: 14px;
+//       left: 0;
+//       position: absolute;
+//       z-index: 1;
+//       top: 0;
+//     }
+//     &:checked:before{
+//
+//     }
+//     &:after{ //jau bus su varnele
+//
+//     }
+//   }
+// }
+// $checkbox-size: 20px;
+// $checkbox-border-radius: 2px;
+// $checkbox-bg: #fff;
+// $checkbox-bg-checked: $default-btn;
+// $checkbox-border-color: rgba(54, 64, 74, 0.2);
+// $checkbox-padding: 4px; //jei kazkas pasikeistu kad butu atitinkamai mazesnis
+// $checkmark-size: $checkbox-size - 2;
+// .checkbox{
+//    position: relative;
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    label{
+//        cursor: pointer;
+//        margin-left: 10px;
+//        :before, &:after{
+//          content: "";
+//          position: absolute;
+//          left: 0;
+//        }
+//        &:before{
+//          width: $checkbox-size;
+//          height: $checkbox-size;
+//          background: $checkbox-bg;
+//          border-radius: $checkbox-border-radius;
+//          border: 2px solid $checkbox-border-color;
+//          transition: background $transition;
+//        }
+//    }
+//    input[type="checkbox"]{
+//      visibility: hidden;
+//      outline: 0;
+//      &:checked{
+//        + label:before{   //musu borderis kvadratas
+//          background: $checkbox-bg-checked;
+//          border: 0;
+//        }
+//        + label:after{ //tik varnele kvadrate
+//          width: $checkmark-size;
+//          height: $checkmark-size/2;
+//          border: 2px solid $checkbox-bg;
+//          border-top-style: none;
+//          border-right-style: none;
+//          -webkit-transform: translate($checkbox-padding, ($checkbox-size / 2) - ($checkmark-size / 2.6)) rotate(-45deg);
+//           -ms-transform: translate($checkbox-padding, ($checkbox-size / 2) - ($checkmark-size / 2.6)) rotate(-45deg);
+//               transform: translate($checkbox-padding, ($checkbox-size / 2) - ($checkmark-size / 2.6)) rotate(-45deg);
+//        }
+//      }
+//    }
+// }
+
+$checkbox-size: 20px;
+$checkbox-border-radius: 2px;
+$checkbox-bg: #fff;
+$checkbox-bg-checked: $default-btn;
+$checkbox-border-color: rgba(54, 64, 74, 0.2);
+$checkbox-padding: 4px;
+$checkmark-size: $checkbox-size - 2 * $checkbox-padding;
 .checkbox{
-  input{
-    appearance:none; //nuima defaultini appearanca
-    background: transparent;
-    border: 0;
-    height: 14px;
-    cursor: pointer;
-    width: 14px;
-    margin-right: 10px;
     position: relative;
-    top: 0;
-    &:before{ //apearancas funkcionuos sitam before, inputas pries paspaudima
-      border-width: 2px solid red;
-      border-radius: 2px;
-      content: ""; //kad kas nors butu rodoma, reikia nauudot su before
-      height: 14px;
-      left: 0;
-      position: absolute;
-      z-index: 1;
-      top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    label{
+        cursor: pointer;
+        margin-left: 10px;
+        &:before, &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+        &:before{
+            width: $checkbox-size;
+            height: $checkbox-size;
+            background: $checkbox-bg;
+            border-radius: $checkbox-border-radius;
+            border: 2px solid $checkbox-border-color;
+            -webkit-transition: background $transition;
+            -o-transition: background $transition;
+            transition: background $transition;
+        }
     }
-    &:checked:before{
-
+    input[type="checkbox"]{
+        visibility: hidden;
+        outline: 0;
+        &:checked{
+            + label:before{
+                background: $checkbox-bg-checked;
+                border: 0;
+            }
+            + label:after{
+                width: $checkmark-size;
+                height: $checkmark-size / 2;
+                border: 2px solid $checkbox-bg;
+                border-top-style: none;
+                border-right-style: none;
+                -webkit-transform: translate($checkbox-padding, ($checkbox-size / 2) - ($checkmark-size / 2.6)) rotate(-45deg);
+                    -ms-transform: translate($checkbox-padding, ($checkbox-size / 2) - ($checkmark-size / 2.6)) rotate(-45deg);
+                        transform: translate($checkbox-padding, ($checkbox-size / 2) - ($checkmark-size / 2.6)) rotate(-45deg);
+            }
+        }
     }
-    &:after{ //jau bus su varnele
-
-    }
-  }
 }
