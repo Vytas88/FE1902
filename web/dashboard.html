@@ -69,16 +69,11 @@
     
               </li>
                 <li class="nav-bar__lists__link">
-                  <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="#" role="button" id="profile">
                     <svg class="svg-icon">
                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu3"></use>
                     </svg>
                   </a>
-                    <div class="dropdown-menu" aria-labelledby="profile">
-                      <a class="dropdown-menu__item" href="#">Profile1</a>
-                      <a class="dropdown-menu__item" href="#">Profile2</a>
-                      <a class="dropdown-menu__item" href="#">Profile3</a>
-                    </div>
                 </li>
                   <li class="nav-bar__lists__link">
                     <a href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -190,21 +185,64 @@
     </ul>
     </div>
     <div  id="section-container" class="section-container">
-      <div id="notification_tabs" class="notification_tabs">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <!-- <div id="sidenav-right" class="sidenav-right">
+        <ul class="nav nav-pills mb-3" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Activity</a>
+          <a class="nav-link active" id="activity-tab" data-toggle="pill" href="#activity" role="tab" aria-controls="activity" aria-selected="true">Activity</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Settings</a>
+          <a class="nav-link" id="settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
         </li>
       
       </ul>
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <div class="tab-pane fade show active" id="activity" role="tabpanel" aria-labelledby="acitvity-tab">
+          <div class="sidenav-right__tab-activity">
+            <p>5 minutes ago</p>
+            <h5><b>John Doe</b>Uploaded photo</h6>
+            <h6>Lorem ipsum dolor sit amet, consea pariatur. Excepteur sint occaecat c</h6>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+          <div class="sidenav-right__tab-settings">
+      
+          </div>
+        </div>
       </div>
+      </div> -->
+      
+      
+      <div id="sidenav-right" class="sidenav-right">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="activity-tab" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="true">Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="activity" role="tabpanel" aria-labelledby="activity-tab">
+                <div class="sidenav-right__tab-activity">
+                  <div class="sidenav-right__tab-activity__content">
+                  <p>5 minutes ago</p>
+                  <h5><b>John Doe</b>Uploaded photo</h6>
+                  <h6>Lorem ipsum dolor sit amet, consea pariatur. Excepteur sint occaecat c</h6>
+                  </div>
+                </div>
+                <div class="sidenav-right__tab-activity">
+                  <div class="sidenav-right__tab-activity__content">
+                  <p>5 minutes ago</p>
+                  <h5><b>John Doe</b>Uploaded photo</h6>
+                  <h6>Lorem ipsum dolor sit amet, consea pariatur. Excepteur sint occaecat c</h6>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                <div class="side-menu__tab-settings">
+                </div>
+            </div>
+          </div>
       </div>
       <div class="section-title">
         <div class="container-fluid">

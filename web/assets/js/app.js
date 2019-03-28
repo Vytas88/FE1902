@@ -30,6 +30,6 @@ var basename = $('#side-menu').find('li.active span').text();
   .attr('href', '/${basename.toLowerCase()}.html'); //prideda atributa //title.hbs ziureti
 })
 
-$('#activities').on('click', function(){
+$('#profile').on('click', function(){
    $('#sidenav-right').toggleClass('sidenav-right--open');
  })

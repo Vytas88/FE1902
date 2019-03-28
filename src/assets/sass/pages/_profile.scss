@@ -1,12 +1,28 @@
 .container-fluid{
+  margin-left: 20px;
   .col-sm-4{
-    background-color: white;
+    text-align: center;
     h6{
       font-weight: bold;
     }
     p{
       fill: gray;
       font-size: 10px;
+    }
+  }
+  .container-skills{
+    padding: 0;
+    .col-sm-4{
+      padding: 15px 20px;
+    }
+    h4{
+      text-align: left;
+    }
+    .progress_title{
+      text-align: left;
+    }
+    .progress{
+      height: 5px;
     }
   }
 }

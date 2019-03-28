@@ -1,0 +1,41 @@
+.sidenav-right{ //GERIAU REIKEJO SUSIKURTI HTML  KLASE SIDE-MENU IR VISKA NUSIKELTI I VIENA FAILA SIDENAV
+    width: 240px;
+    right: -250px;
+    position: fixed;
+
+   transition: $transition;
+  &__tab-activity{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-left: 5px solid #222;
+    &__content{
+      padding-left: 20px;
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: -10px;
+        width: 16px;
+        height: 10px;
+        background: #fff;
+        border: 2px solid #222;
+        border-radius: 50%;
+      }
+    }
+    }
+    &--open{
+      display: block;
+      top: 80px;
+      width: 240px;
+       background: white;
+       right: 0px;
+       height: 100%;
+       position: fixed;
+       overflow: scroll;
+       z-index: 999;
+       transition: $transition;
+  }
+
+}
