@@ -1,16 +1,14 @@
 .login{
   background: white;
   &__title{
-    margin-bottom: 40px;
+    margin: 30px;
     text-align: center;
     display: flex;
     justify-content: center;
-    img{
-      max-width: 100%;
-      display: block;
-      height: 40px;
+    color: $default-icon-color;
+    svg{
+      fill: $default-icon-color;
     }
-
   }
   &__form{
     &__item{

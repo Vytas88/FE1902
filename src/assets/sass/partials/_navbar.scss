@@ -39,6 +39,26 @@
                 svg{
                   width: 20px;
                   fill: white;
+                  height: 20px;
+                }
+                span{
+                  color: white;
+                }
+                input{
+                  height: 25px;
+                  margin-left: 11px;
+                  position: relative;
+                  background-color: cornflowerblue;
+                  border: 0;
+                  padding-left: 14px;
+                }
+                button{
+                  position: absolute;
+                  top: 29px;
+                  left: 234px;
+                  line-height: 13px;
+                  background-color: cornflowerblue;
+                  border: 0;
                 }
             }
             .dropdown-menu{
@@ -50,9 +70,14 @@
                 .circle{
                   @include circle($width: 40px, $height: 40px);
                 }
+                .notification_circle{
+                  @include notification_circle($width: 40px, $height: 40px);
+                }
                 align-items: center;
                 &__title{
-                  margin-left: 10px;
+                  margin-left: -10px;
+                  margin-right: 13px;
+                  margin-bottom: -9px;
                   h5{
                     color: $text-color;
                   }
@@ -62,6 +87,13 @@
                   }
 
                 }
+              }
+            }
+            .dropdown-menu-right {
+              left: 0;
+              h6{
+                margin-left: 20px;
+                color: black;
               }
             }
         }
@@ -85,4 +117,7 @@
   .section-container{
     margin-left: $sidenav-closed-width + 15;
   }
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
 }
