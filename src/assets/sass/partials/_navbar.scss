@@ -62,11 +62,24 @@
                 }
             }
             .dropdown-menu{
+              padding-bottom: 0;
+              .notification{
+                display: flex;
+                h4{
+                  margin-left: 20px;
+                  margin-bottom: 20px;
+                  font-size: larger;
+                }
+                &__square{
+                  @include notification_square($width: 20px, $height: 20px);
+                }
+              }
               &__item{
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
                 padding: 10px 20px;
+                margin-bottom: 4px;
                 .circle{
                   @include circle($width: 40px, $height: 40px);
                 }
@@ -87,6 +100,21 @@
                   }
 
                 }
+                &__notification__title{
+                  margin-left: 10px;
+                  margin-right: 0px;
+                  h6{
+                    color: black;
+                  }
+                  p{
+                    line-height: 1;
+                    color: $mid-gray;
+                  }
+                }
+              }
+              .view{
+                background-color: lightgray;
+                margin-bottom: 0;
               }
             }
             .dropdown-menu-right {

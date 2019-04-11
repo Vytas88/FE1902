@@ -1,51 +1,71 @@
-<div class="section-title">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-6">
-              Profile
-            </div>
-            <div class="col-sm-6 section-title__nav text-right">
-              <span><a href="/dashboard.html">Minton</a></span>
-              <span><a href="/dashboard.html">Extras</a></span>
-            </div>
-          </div>
-        </div>
-</div>
-
+---
+custom_basename: profile
+bg-color: true
+---
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
       <div class="row">
         <div class="col-12">
-
-
-
           <div class="boxes boxes--flex flex-column align-items-center">
             <div class="d-flex flex-column align-items-center">
-
-
-        <img class="boxes__image" src="assets/images/user1.jpg" alt="user picture">
-        <div class="boxes__user-info v-align">
-
-
-          <h6>Mark McKnight</h6>
-          <p>@web designer</p>
-      </div>
-      <div>
-
-
-      <button type="button" class="btn btn-success">Follow</button>
-      <button type="button" class="btn btn-danger">Message</button>
-      </div>
-    </div>
+              <img class="boxes__image circle circle--border circle--profile" src="assets/images/user1.jpg" alt="user picture">
+                <div class="boxes__user-info v-align">
+                  <h6>Mark McKnight</h6>
+                  <p>@web designer</p>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-success">Follow</button>
+                  <button type="button" class="btn btn-danger">Message</button>
+                </div>
+                <div class="boxes__user-info user-data">
+                  <div class="name d-flex">
+                    <p><b>Full name:</b></p>
+                    <p> Mark A. McKnight</p>
+                  </div>
+                  <div class="mobile d-flex">
+                    <p><b>Mobile:</b></p>
+                    <p> (123) 133 1334</p>
+                  </div>
+                  <div class="email d-flex">
+                    <p><b>Email:</b></p>
+                    <p> coderthemes@gmail.com</p>
+                  </div>
+                  <div class="location d-flex">
+                    <p><b>Location:</b></p>
+                    <p> USA</p>
+                  </div>
+                </div>
+                <div class="boxes__user-info social-icons">
+                <div class="circle">
+                  <a href="#">
+                  <svg class="svg-icon">
+             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu19"></use>
+                  </svg>
+                </a>
+                </div>
+                <div class="circle">
+                  <a href="#">
+                  <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu20"></use>
+                  </svg>
+                  </a>
+                </div>
+                <div class="circle">
+                  <a href="#">
+                  <svg class="svg-icon">
+             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu21"></use>
+                  </svg>
+                  </a>
+                </div>
+                </div>
+            </div>
+          </div>
         </div>
-        </div>
-
-<div class="col-12">
-      <div class="boxes boxes--flex flex-column">
-
-                <h4>SKILLS</h4>
-                <div class="progress_title">HTML5</div>
+          <div class="col-12">
+            <div class="boxes boxes--flex flex-column skills">
+              <h4>SKILLS</h4>
+              <div class="progress_title">HTML5</div>
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -64,18 +84,20 @@
       </div>
 
     <div class="col-sm-8">
+      <div class="boxes">
+        <!-- <div class="d-flex flex-column align-items-center"> -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="aboutme-tab" data-toggle="tab" href="#aboutme" role="tab" aria-controls="aboutme" aria-selected="true">ABOUT ME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="galerry-tab" data-toggle="tab" href="#galerry" role="tab" aria-controls="galerry" aria-selected="false">GALERRY</a>
+          <a class="nav-link" id="galerry-profile-tab" data-toggle="tab" href="#galerry-profile" role="tab" aria-controls="galerry-profile" aria-selected="false">GALERRY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">SETTINGS</a>
+          <a class="nav-link" id="settings-profile-tab" data-toggle="tab" href="#settings-profile" role="tab" aria-controls="settings-profile" aria-selected="false">SETTINGS</a>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content" id="myTabContent2">
         <div class="tab-pane fade show active" id="aboutme" role="tabpanel" aria-labelledby="aboutme-tab">
           <form>
             <div class="form-row">
@@ -118,9 +140,11 @@
             </div>
 
           </form>
+          <div class="tab-pane fade" id="gallery-profile" role="tabpanel" aria-labelledby="gallery-profile-tab"></div>
+          <div class="tab-pane fade" id="settings-profile" role="tabpanel" aria-labelledby="settings-profile-tab"></div>
         </div>
-        <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab"></div>
-        <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab"></div>
+        </div>
+
       </div>
 
  </div>

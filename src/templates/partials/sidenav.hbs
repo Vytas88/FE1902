@@ -4,6 +4,14 @@
 </ul>
 <ul class="side-menu__lists">
   <li class="side-menu__lists__list {{#is custom_basename 'dashboard'}} active{{/is}}">
+    <a href="/dashboard.html">
+      <svg class="svg-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu5"></use>
+      </svg>
+      <span>{{default.sidenav.dashboard}}</span>
+    </a>
+  </li>
+  <li class="side-menu__lists__list">
     <a href="#">
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu5"></use>
@@ -16,15 +24,15 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu5"></use>
       </svg>
-      <span>{{default.sidenav.dashboard}}</span>
+      <span>{{default.sidenav.uikit}}</span>
     </a>
   </li>
-  <li class="side-menu__lists__list">
-    <a href="#">
+  <li class="side-menu__lists__list {{#is custom_basename 'profile'}} active{{/is}}">
+    <a href="/profile.html">
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu5"></use>
       </svg>
-      <span>{{default.sidenav.uikit}}</span>
+      <span>{{default.sidenav.profile}}</span>
     </a>
   </li>
 </ul>

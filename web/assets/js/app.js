@@ -27,7 +27,7 @@ $(function(){
 var basename = $('#side-menu').find('li.active span').text();
   $('#basename')
   .text(basename)
-  .attr('href', '/${basename.toLowerCase()}.html'); //prideda atributa //title.hbs ziureti
+  .attr('href', `${basename.toLowerCase()}.html`); //prideda atributa //title.hbs ziureti
 })
 
 $('#profile').on('click', function(){

@@ -4,25 +4,59 @@
     text-align: center;
     h6{
       font-weight: bold;
+      margin-bottom: 3px;
     }
     p{
-      fill: gray;
+      color: gray;
       font-size: 10px;
+      margin-bottom: 20px;
+    }
+    .btn-success{
+      padding: 6px 20px;
+    }
+    .user-data{
+      margin-left: -120px;
+      margin-top: 25px;
+
+    }
+    .name, .mobile, .email, .location{
+      height: 23px;
+    }
+    .social-icons{
+      display: flex;
+      .circle{
+        @include circle($height: 30px, $width: 30px);
+        background-color: lightgray;
+        margin: 0px 2px;
+        svg{
+          color: darkgray;
+          height: 15px;
+          width: 10px;
+        }
+      }
+    }
+    .skills{
+      padding: 19px 15px;
+      .col-sm-4{
+        padding: 15px 20px;
+      }
+      h4{
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .progress_title{
+        text-align: left;
+      }
+      .progress{
+        height: 5px;
+      }
     }
   }
-  .container-skills{
-    padding: 0;
-    .col-sm-4{
-      padding: 15px 20px;
-    }
-    h4{
-      text-align: left;
-    }
-    .progress_title{
-      text-align: left;
-    }
-    .progress{
-      height: 5px;
+  .col-sm-8{
+    .form-control{
+      border: 0;
+      border-bottom: 1px solid darkgray;
     }
   }
+
 }

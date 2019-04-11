@@ -71,6 +71,10 @@ module.exports = function(grunt) {
           '../../../../web/assets/images/ic_menu15_24px.svg',
           '../../../../web/assets/images/ic_menu16_24px.svg',
           '../../../../web/assets/images/ic_menu17_24px.svg',
+          '../../../../web/assets/images/ic_menu18_24px.svg',
+          '../../../../web/assets/images/ic_menu19_24px.svg',
+          '../../../../web/assets/images/ic_menu20_24px.svg',
+          '../../../../web/assets/images/ic_menu21_24px.svg',
 
 
       ],
